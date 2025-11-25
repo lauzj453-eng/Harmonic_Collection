@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: normal;
+    letter-spacing: 12px;
+    margin-bottom: 40px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0 auto 60px;
+}
+
+.quote-section {
+    margin: 60px 0;
+    padding: 20px;
+}
+
+.quote-section p:first-child {
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.quote-section p:last-child {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.entry-section {
+    margin: 60px 0 80px;
+}
+
+.entry-section h2 {
+    font-size: 32px;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.enter-button {
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 20px 50px;
+    text-decoration: none;
+    border: 3px solid #ffffff;
+    transition: opacity 0.3s;
+}
+
+.enter-button:hover {
+    opacity: 0.7;
+}
+
+.images-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 80px 0 60px;
+}
+
+.corner-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    transition: opacity 0.3s;
+}
+
+.corner-image:hover {
+    opacity: 0.5;
+}
+.intro-paragraph {
+    margin: 40px auto 0;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.intro-paragraph p {
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+.projects-section {
+    margin: 80px 0 40px;
+    padding: 40px 0;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+    font-weight: normal;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.project-links a, .about-section a, .back-section a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 15px 35px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    transition: opacity 0.3s;
+}
+
+.project-links a:hover, .about-section a:hover, .back-section a:hover {
+    opacity: 0.7;
+}
+
+.about-section, .back-section {
+    margin-top: 60px;
+    padding-top: 40px;
+}

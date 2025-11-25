@@ -1,0 +1,53 @@
+body{
+    padding:0;
+    background-color: #0d7eb6;
+    color: #181717;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.reanimation-title{
+    background-color: peachpuff;
+    width: 50%;
+    font-size: 2vw;
+}
+.title-div{
+    width: 75%;
+}
+
+.gallery{
+    width: 75%;
+    display:incline-block;
+    text-align: center;
+    margin: 0 auto
+}
+
+.gallery .example{
+    /*top: 50px;
+    left: 200px; */
+}
+
+.gallery img{
+    width: 25%;
+    display:inline-block;
+    vertical-align:middle;
+    /*position: absolute;
+    top: 0;
+    left: 0; */
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 1opx;
+    position: fixed;
+    top: 0;
+    left: 0;width: 100%;
+    z-index: index 2;
+}
+
+nav a{
+    margin-right: 25px;
+    color: white;
+    text-decoration: none;
+}

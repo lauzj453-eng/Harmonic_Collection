@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #FFB6D9;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.label-text {
+    color: #00BFFF;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.blue-outer-box {
+    background: linear-gradient(180deg, #00BFFF 0%, #0080FF 100%);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.purple-middle-box {
+    background: #9B59B6;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.pink-inner-box {
+    background: #E87FD8;
+    padding: 30px;
+    border: 10px solid #000;
+    border-radius: 3px;
+}
+
+.image-container {
+    background: #E87FD8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#characterImage {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border: 8px solid #000;
+    display: block;
+    background: white;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 130px;
+    height: 75px;
+    border: 5px solid #000;
+    border-radius: 5px;
+    font-size: 2.5em;
+    cursor: pointer;
+    transition: transform 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.camera-btn {
+    background: #FFD700;
+}
+
+.bucket-btn {
+    background: #0066FF;
+}
+
+.hanger-btn {
+    background: #0066FF;
+}
+
+.restart-btn {
+    background: #0066FF;
+}
+
+.print-button {
+    background: #4CAF50;
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 18px;
+    font-size: 1.8em;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.2s;
+}
+
+.print-button:hover {
+    transform: translateY(-2px);
+}
+
+.colorbean {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .label-text {
+        font-size: 1.3em;
+    }
+
+    .blue-outer-box {
+        padding: 15px;
+    }
+
+    .purple-middle-box {
+        padding: 15px;
+    }
+
+    .pink-inner-box {
+        padding: 20px;
+        border: 6px solid #000;
+    }
+
+    #characterImage {
+        max-width: 250px;
+    }
+
+    .btn {
+        width: 80px;
+        height: 60px;
+        font-size: 2em;
+    }
+
+    .print-button {
+        font-size: 1.3em;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .label-text {
+        display: none;
+    }
+
+    .buttons-container {
+        display: none !important;
+    }
+
+    .print-button {
+        display: none !important;
+    }
+
+    .blue-outer-box,
+    .purple-middle-box {
+        background: white;
+        padding: 10px;
+    }
+
+    h1 {
+        color: black;
+    }
+}

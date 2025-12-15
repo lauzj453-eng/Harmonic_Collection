@@ -1,0 +1,99 @@
+body {
+    background-color: #e1ad01;
+    margin: 0;
+    padding: 0;
+    background-color:#FFB6D9;
+}
+.back-nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.back-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 12px 25px;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.back-nav a:hover {
+    background-color: #ff9ed5;
+    border-color: #ff9ed5;
+}
+.back-nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.back-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 12px 25px;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.back-nav a:hover {
+    background-color: #ff9ed5;
+    border-color: #ff9ed5;
+}
+.poster-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.poster {
+    width: 500px;
+    height: 700px;
+    background-image: url('./kittle.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.poster.togglesaurus {
+    filter: grayscale(100%);
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 24px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .poster {
+        width: 90%;
+        height: 500px;
+    }
+    
+    button {
+        padding: 12px 30px;
+        font-size: 20px;
+    }
+}

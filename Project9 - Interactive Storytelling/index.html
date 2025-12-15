@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Memory Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="back-nav">
+        <a href="../projects.html">← Back to Collection</a>
+    </div>
+
+    <div class="container">
+        <!-- SCREEN 1: INTRO -->
+        <div id="intro-screen" class="screen active">
+            <h1>CONCERT MEMORY BOOK</h1>
+            <div class="divider"></div>
+            <p class="subtitle">Save your favorite concert memories forever</p>
+            <button onclick="goToAddMemory()">ADD NEW MEMORY</button>
+            <button onclick="goToViewMemories()">VIEW ALL MEMORIES</button>
+        </div>
+
+        <!-- SCREEN 2: ADD CONCERT INFO -->
+        <div id="info-screen" class="screen">
+            <h2>WHO DID YOU SEE?</h2>
+            <p class="subtitle">Tell us about the concert</p>
+            
+            <input type="text" id="artist-name" placeholder="Artist/Band Name">
+            <input type="text" id="venue-name" placeholder="Venue Name">
+            <input type="text" id="concert-date" placeholder="Date (e.g. Dec 2024)">
+            
+            <button onclick="goToRating()">NEXT: RATE IT</button>
+            <button onclick="goHome()">CANCEL</button>
+        </div>
+
+        <!-- SCREEN 3: RATE THE CONCERT -->
+        <div id="rating-screen" class="screen">
+            <h2>HOW WAS IT?</h2>
+            <p class="subtitle">Rate your experience</p>
+            
+            <div class="rating-container">
+                <div class="stars" id="star-rating">
+                    <span class="star" onclick="setRating(1)">★</span>
+                    <span class="star" onclick="setRating(2)">★</span>
+                    <span class="star" onclick="setRating(3)">★</span>
+                    <span class="star" onclick="setRating(4)">★</span>
+                    <span class="star" onclick="setRating(5)">★</span>
+                </div>
+                <p id="rating-text" style="font-size: 20px; letter-spacing: 2px;">Click the stars!</p>
+            </div>
+            
+            <button onclick="goToPhoto()">NEXT: ADD PHOTO</button>
+            <button onclick="goHome()">CANCEL</button>
+        </div>
+
+        <!-- SCREEN 4: ADD PHOTO -->
+        <div id="photo-screen" class="screen">
+            <h2>ADD A PHOTO</h2>
+            <p class="subtitle">Optional: Choose a concert photo</p>
+            
+            <div class="image-upload">
+                <input type="file" id="photo-input" accept="image/*" onchange="previewPhoto()">
+                <img id="photo-preview" class="image-preview">
+            </div>
+            
+            <input type="text" id="photo-caption" placeholder="Add a caption (optional)">
+            
+            <button onclick="saveMemory()">SAVE MEMORY</button>
+            <button onclick="goHome()">CANCEL</button>
+        </div>
+
+        <!-- SCREEN 5: VIEW ALL MEMORIES -->
+        <div id="memories-screen" class="screen">
+            <h2>YOUR CONCERT MEMORIES</h2>
+            <div class="divider"></div>
+            
+            <div id="memories-container" class="memories-grid">
+                <p class="no-memories">No memories yet! Add your first concert.</p>
+            </div>
+            
+            <button onclick="goToAddMemory()">ADD NEW MEMORY</button>
+            <button onclick="goHome()">BACK TO HOME</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

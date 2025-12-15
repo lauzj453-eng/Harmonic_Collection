@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bebas Neue', 'Oswald', Impact, sans-serif;
+    background-image: url('background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.back-nav {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.back-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 12px 25px;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.back-nav a:hover {
+    background-color: #ff9ed5;
+    border-color: #ff9ed5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.screen {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border: 3px solid #ff9ed5;
+    margin: 20px 0;
+}
+
+.screen.active {
+    display: block;
+}
+
+h1 {
+    font-size: 48px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    color: #ff9ed5;
+}
+
+h2 {
+    font-size: 32px;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+    color: #ff9ed5;
+}
+
+.subtitle {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.divider {
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ff9ed5, transparent);
+    margin: 20px auto;
+}
+
+button {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding: 15px 40px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 3px solid #ff9ed5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ff9ed5;
+    color: #000000;
+}
+
+input[type="text"] {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.rating-container {
+    margin: 30px 0;
+}
+
+.stars {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.star {
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s;
+}
+
+.star.active {
+    color: #ff9ed5;
+}
+
+.star:hover {
+    color: #ff9ed5;
+}
+
+.image-upload {
+    margin: 30px 0;
+}
+
+.image-preview {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px auto;
+    border: 3px solid #ff9ed5;
+    display: none;
+}
+
+.memory-card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff9ed5;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.memory-card h3 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #ff9ed5;
+    margin-bottom: 10px;
+}
+
+.memory-card p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+.memory-card img {
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+}
+
+.memories-grid {
+    display: grid;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.no-memories {
+    font-size: 20px;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    padding: 40px;
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 36px; }
+    h2 { font-size: 24px; }
+    button { font-size: 16px; padding: 12px 30px; }
+}
